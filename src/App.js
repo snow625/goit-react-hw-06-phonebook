@@ -1,11 +1,14 @@
 import { useSelector } from "react-redux";
 import { useCallback } from "react";
 
-import { add, remove } from "./redux/contacts/items/items-reducer-slice";
-import { getContacts } from "./redux/contacts/items/items-selector";
+import {
+  add,
+  remove,
+} from "./redux/contacts/contacts-items/contacts-items-reducer-slice";
+import { getContacts } from "./redux/contacts/contacts-items/contacts-items-selector";
 
-import { change } from "./redux/contacts/filter/filter-reducer-slice";
-import { getFilteredItems } from "./redux/contacts/filter/filter-selector";
+import { change } from "./redux/contacts/contacts-filter/contacts-filter-reducer-slice";
+import { getFilteredItems } from "./redux/contacts/contacts-filter/contacts-filter-selector";
 
 import { useDispatch } from "react-redux/es/exports";
 
